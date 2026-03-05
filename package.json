@@ -1,0 +1,26 @@
+{
+  "name": "0day-vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "bootstrap": "^5.3.8",
+    "sass": "^1.97.3",
+    "typescript": "^5.9.3",
+    "vite": "^8.0.0-beta.13"
+  },
+  "overrides": {
+    "vite": "^8.0.0-beta.13"
+  },
+  "dependencies": {
+    "@fontsource/righteous": "^5.2.7",
+    "@fontsource/ubuntu-mono": "^5.2.8",
+    "@tsparticles/engine": "^3.9.1",
+    "@tsparticles/slim": "^3.9.1"
+  }
+}

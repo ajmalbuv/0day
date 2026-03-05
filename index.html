@@ -1,44 +1,18 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Ajmal Basheer - ajmalbuv</title>
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "Person",
-        "name": ["Ajmal Basheer", "ajmalbuv", "Ajmal Aju", "_.aju"],
-        "image": "img/avatar.webp",
-        "jobTitle": [
-          "Software Engineer",
-          "Systems Builder",
-          "Flutter Developer"
-        ],
-        "description": "Ajmal Basheer, a software engineer focused on scalable application development, stands at the intersection of engineering discipline and practical innovation. With a consistent record of delivering production-ready systems, he serves as a driving force behind high-performance Flutter applications and modern cross-platform solutions. Working through structured architecture and iterative refinement, Ajmal brings sharp technical insight to every stage of the development lifecycle. His solutions are designed to optimize performance, strengthen reliability, and ensure seamless user experiences across diverse environments. Committed to continuous growth, Ajmal applies analytical thinking and disciplined execution to elevate software quality, build resilient systems, and create long-term technical and financial leverage.",
-        "url": "https://ajmalbuv.github.io/",
-        "sameAs": [
-          "https://instagram.com/_.aju",
-          "https://twitch.tv/ajmalbuv",
-          "https://linkedin.com/in/ajmalbuv",
-          "https://github.com/ajmalbuv"
-        ],
-        "birthDate": "2001-02-07"
-      }
-    </script>
+    <script type="application/ld+json" src="/schema.json"></script>
     <meta name="author" content="Ajmal Basheer" />
     <meta
       name="description"
       content="Ajmal Basheer, a software engineer focused on scalable application development, stands at the intersection of engineering discipline and practical innovation. With a consistent record of delivering production-ready systems, he serves as a driving force behind high-performance Flutter applications and modern cross-platform solutions. Working through structured architecture and iterative refinement, Ajmal brings sharp technical insight to every stage of the development lifecycle. His solutions are designed to optimize performance, strengthen reliability, and ensure seamless user experiences across diverse environments. Committed to continuous growth, Ajmal applies analytical thinking and disciplined execution to elevate software quality, build resilient systems, and create long-term technical and financial leverage."
     />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Righteous|Ubuntu+Mono&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
+
   <body>
     <div id="particles-js"></div>
     <div class="container">
@@ -47,7 +21,7 @@
           <div class="col-md-5 d-flex justify-content-center">
             <img
               class="image img-fluid"
-              src="img/avatar.webp"
+              src="/src/assets/avatar.webp"
               alt="Profile picture of Ajmal Basheer (ajmalbuv)"
             />
           </div>
@@ -60,9 +34,6 @@
             <a
               class="link1"
               href="https://instagram.com/_.aju"
-              data-bs-toggle="tooltip"
-              data-bs-placement="bottom"
-              title="Instagram"
               aria-label="Instagram"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -78,9 +49,6 @@
             <a
               class="link1"
               href="https://linkedin.com/in/ajmalbuv"
-              data-bs-toggle="tooltip"
-              data-bs-placement="bottom"
-              title="Linkedin"
               aria-label="Linkedin"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -96,9 +64,6 @@
             <a
               class="link1"
               href="https://github.com/ajmalbuv"
-              data-bs-toggle="tooltip"
-              data-bs-placement="bottom"
-              title="Github"
               aria-label="Github"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -115,8 +80,6 @@
         </div>
       </div>
     </div>
-    <script src="js/bootstrap.bundle.min.js" defer></script>
-    <script src="js/particles.min.js" defer></script>
-    <script src="js/main.js" defer></script>
+    <script type="module" src="/src/main.ts" defer></script>
   </body>
 </html>
