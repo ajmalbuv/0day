@@ -1,0 +1,99 @@
+{
+  "index.html": {
+    "file": "assets/index-DjgmzEAF.js",
+    "name": "index",
+    "src": "index.html",
+    "isEntry": true,
+    "assets": [
+      "assets/righteous-latin-ext-400-normal-rbdiPHGJ.woff2",
+      "assets/righteous-latin-ext-400-normal-EtPo6WgU.woff",
+      "assets/righteous-latin-400-normal-DIzXvQUm.woff2",
+      "assets/righteous-latin-400-normal-CRvo487o.woff",
+      "assets/ubuntu-mono-cyrillic-ext-400-normal-C5u8faa9.woff2",
+      "assets/ubuntu-mono-cyrillic-ext-400-normal-CL-A5l1V.woff",
+      "assets/ubuntu-mono-cyrillic-400-normal-OGyu3tt3.woff2",
+      "assets/ubuntu-mono-cyrillic-400-normal-Di_0TARV.woff",
+      "assets/ubuntu-mono-greek-ext-400-normal-CUE8Ia0W.woff2",
+      "assets/ubuntu-mono-greek-ext-400-normal-BNZd3ZNJ.woff",
+      "assets/ubuntu-mono-greek-400-normal-CCUzT4Jh.woff2",
+      "assets/ubuntu-mono-greek-400-normal-DR50Gfyl.woff",
+      "assets/ubuntu-mono-latin-ext-400-normal-Cadvr_Yo.woff2",
+      "assets/ubuntu-mono-latin-ext-400-normal-C-izf5FM.woff",
+      "assets/ubuntu-mono-latin-400-normal-l4cqI2xd.woff2",
+      "assets/ubuntu-mono-latin-400-normal-DpWeehTz.woff",
+      "assets/avatar-3stlKmaE.webp"
+    ]
+  },
+  "node_modules/@fontsource/righteous/files/righteous-latin-400-normal.woff": {
+    "file": "assets/righteous-latin-400-normal-CRvo487o.woff",
+    "src": "node_modules/@fontsource/righteous/files/righteous-latin-400-normal.woff"
+  },
+  "node_modules/@fontsource/righteous/files/righteous-latin-400-normal.woff2": {
+    "file": "assets/righteous-latin-400-normal-DIzXvQUm.woff2",
+    "src": "node_modules/@fontsource/righteous/files/righteous-latin-400-normal.woff2"
+  },
+  "node_modules/@fontsource/righteous/files/righteous-latin-ext-400-normal.woff": {
+    "file": "assets/righteous-latin-ext-400-normal-EtPo6WgU.woff",
+    "src": "node_modules/@fontsource/righteous/files/righteous-latin-ext-400-normal.woff"
+  },
+  "node_modules/@fontsource/righteous/files/righteous-latin-ext-400-normal.woff2": {
+    "file": "assets/righteous-latin-ext-400-normal-rbdiPHGJ.woff2",
+    "src": "node_modules/@fontsource/righteous/files/righteous-latin-ext-400-normal.woff2"
+  },
+  "node_modules/@fontsource/ubuntu-mono/files/ubuntu-mono-cyrillic-400-normal.woff": {
+    "file": "assets/ubuntu-mono-cyrillic-400-normal-Di_0TARV.woff",
+    "src": "node_modules/@fontsource/ubuntu-mono/files/ubuntu-mono-cyrillic-400-normal.woff"
+  },
+  "node_modules/@fontsource/ubuntu-mono/files/ubuntu-mono-cyrillic-400-normal.woff2": {
+    "file": "assets/ubuntu-mono-cyrillic-400-normal-OGyu3tt3.woff2",
+    "src": "node_modules/@fontsource/ubuntu-mono/files/ubuntu-mono-cyrillic-400-normal.woff2"
+  },
+  "node_modules/@fontsource/ubuntu-mono/files/ubuntu-mono-cyrillic-ext-400-normal.woff": {
+    "file": "assets/ubuntu-mono-cyrillic-ext-400-normal-CL-A5l1V.woff",
+    "src": "node_modules/@fontsource/ubuntu-mono/files/ubuntu-mono-cyrillic-ext-400-normal.woff"
+  },
+  "node_modules/@fontsource/ubuntu-mono/files/ubuntu-mono-cyrillic-ext-400-normal.woff2": {
+    "file": "assets/ubuntu-mono-cyrillic-ext-400-normal-C5u8faa9.woff2",
+    "src": "node_modules/@fontsource/ubuntu-mono/files/ubuntu-mono-cyrillic-ext-400-normal.woff2"
+  },
+  "node_modules/@fontsource/ubuntu-mono/files/ubuntu-mono-greek-400-normal.woff": {
+    "file": "assets/ubuntu-mono-greek-400-normal-DR50Gfyl.woff",
+    "src": "node_modules/@fontsource/ubuntu-mono/files/ubuntu-mono-greek-400-normal.woff"
+  },
+  "node_modules/@fontsource/ubuntu-mono/files/ubuntu-mono-greek-400-normal.woff2": {
+    "file": "assets/ubuntu-mono-greek-400-normal-CCUzT4Jh.woff2",
+    "src": "node_modules/@fontsource/ubuntu-mono/files/ubuntu-mono-greek-400-normal.woff2"
+  },
+  "node_modules/@fontsource/ubuntu-mono/files/ubuntu-mono-greek-ext-400-normal.woff": {
+    "file": "assets/ubuntu-mono-greek-ext-400-normal-BNZd3ZNJ.woff",
+    "src": "node_modules/@fontsource/ubuntu-mono/files/ubuntu-mono-greek-ext-400-normal.woff"
+  },
+  "node_modules/@fontsource/ubuntu-mono/files/ubuntu-mono-greek-ext-400-normal.woff2": {
+    "file": "assets/ubuntu-mono-greek-ext-400-normal-CUE8Ia0W.woff2",
+    "src": "node_modules/@fontsource/ubuntu-mono/files/ubuntu-mono-greek-ext-400-normal.woff2"
+  },
+  "node_modules/@fontsource/ubuntu-mono/files/ubuntu-mono-latin-400-normal.woff": {
+    "file": "assets/ubuntu-mono-latin-400-normal-DpWeehTz.woff",
+    "src": "node_modules/@fontsource/ubuntu-mono/files/ubuntu-mono-latin-400-normal.woff"
+  },
+  "node_modules/@fontsource/ubuntu-mono/files/ubuntu-mono-latin-400-normal.woff2": {
+    "file": "assets/ubuntu-mono-latin-400-normal-l4cqI2xd.woff2",
+    "src": "node_modules/@fontsource/ubuntu-mono/files/ubuntu-mono-latin-400-normal.woff2"
+  },
+  "node_modules/@fontsource/ubuntu-mono/files/ubuntu-mono-latin-ext-400-normal.woff": {
+    "file": "assets/ubuntu-mono-latin-ext-400-normal-C-izf5FM.woff",
+    "src": "node_modules/@fontsource/ubuntu-mono/files/ubuntu-mono-latin-ext-400-normal.woff"
+  },
+  "node_modules/@fontsource/ubuntu-mono/files/ubuntu-mono-latin-ext-400-normal.woff2": {
+    "file": "assets/ubuntu-mono-latin-ext-400-normal-Cadvr_Yo.woff2",
+    "src": "node_modules/@fontsource/ubuntu-mono/files/ubuntu-mono-latin-ext-400-normal.woff2"
+  },
+  "src/assets/avatar.webp": {
+    "file": "assets/avatar-3stlKmaE.webp",
+    "src": "src/assets/avatar.webp"
+  },
+  "style.css": {
+    "file": "assets/style-ByThuwJt.css",
+    "src": "style.css"
+  }
+}
