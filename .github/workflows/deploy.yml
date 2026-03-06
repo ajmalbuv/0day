@@ -26,6 +26,9 @@ jobs:
         run: |
           npm ci
           npm run build
+        env:
+          VITE_BASE: /0day/
+          VITE_SITE_URL: https://ajmalbuv.github.io/0day/
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
