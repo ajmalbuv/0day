@@ -14,20 +14,22 @@ export default defineConfig({
   base: BASE_PATH,
   plugins: [
     (() => {
+      let lastCspHash = "";
       let avatarPath = "";
       return {
         name: "jsonld-csp-automation",
-        generateBundle(bundle) {
+        generateBundle(_options, bundle) {
           for (const [fileName] of Object.entries(bundle)) {
             if (fileName.includes("avatar") && fileName.endsWith(".webp")) {
               avatarPath = (BASE_PATH + fileName).replace(/\/+/g, "/");
+              console.log(
+                `[CSP Automation] Found hashed avatar: ${avatarPath}`,
+              );
               break;
             }
           }
         },
-        closeBundle() {
-          const distDir = path.resolve(__dirname, "dist");
-          const htmlPath = path.join(distDir, "index.html");
+        transformIndexHtml(html) {
           if (!avatarPath)
             avatarPath = (BASE_PATH + "assets/avatar.webp").replace(
               /\/+/g,
@@ -40,25 +42,27 @@ export default defineConfig({
             .createHash("sha256")
             .update(schemaJson)
             .digest("base64");
-          const cspHash = `sha256-${hash}`;
-          console.log(`\n[CSP Automation] Using Site URL: ${SITE_URL}`);
-          console.log(`[CSP Automation] Final JSON-LD Hash: ${cspHash}`);
-          if (fs.existsSync(htmlPath)) {
-            let html = fs.readFileSync(htmlPath, "utf-8");
-            if (html.includes("</head>")) {
-              html = html.replace("</head>", `${scriptTag}\n  </head>`);
-              fs.writeFileSync(htmlPath, html);
-              console.log(
-                `[CSP Automation] Injected inline JSON-LD into ${htmlPath}`,
-              );
-            }
+          lastCspHash = `sha256-${hash}`;
+          console.log(`\n[CSP Automation] Site URL: ${SITE_URL}`);
+          console.log(`[CSP Automation] Avatar Path: ${avatarPath}`);
+          console.log(`[CSP Automation] Final JSON-LD Hash: ${lastCspHash}`);
+          if (html.includes("</head>")) {
+            console.log(
+              "[CSP Automation] Injected JSON-LD into index.html via transformIndexHtml",
+            );
+            return html.replace("</head>", `${scriptTag}\n  </head>`);
           }
+          return html;
+        },
+
+        closeBundle() {
+          const distDir = path.resolve(__dirname, "dist");
           const headersPath = path.join(distDir, "_headers");
           if (fs.existsSync(headersPath)) {
             let headers = fs.readFileSync(headersPath, "utf-8");
             headers = headers.replace(
               /script-src 'self'/,
-              `script-src 'self' '${cspHash}'`,
+              `script-src 'self' '${lastCspHash}'`,
             );
             fs.writeFileSync(headersPath, headers);
             console.log(`[CSP Automation] Updated ${headersPath}`);
@@ -71,7 +75,7 @@ export default defineConfig({
                 headers: [
                   {
                     key: "Content-Security-Policy",
-                    value: `default-src 'none'; script-src 'self' '${cspHash}'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests`,
+                    value: `default-src 'none'; script-src 'self' '${lastCspHash}'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests`,
                   },
                 ],
               },

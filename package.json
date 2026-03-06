@@ -1,5 +1,5 @@
 {
-  "name": "0day-vite",
+  "name": "0day",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -23,5 +23,8 @@
     "@fontsource/ubuntu-mono": "^5.2.8",
     "@tsparticles/engine": "^3.9.1",
     "@tsparticles/slim": "^3.9.1"
-  }
+  },
+  "trustedDependencies": [
+    "@tsparticles/engine"
+  ]
 }

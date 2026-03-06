@@ -14,6 +14,5 @@ export function generatePersonSchema(avatarUrl: string, siteUrl: string) {
       "https://twitch.tv/ajmalbuv",
       "https://linkedin.com/in/ajmalbuv",
     ],
-    birthDate: "2001-02-07",
   };
 }
