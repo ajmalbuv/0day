@@ -1,7 +1,7 @@
 import "./style.scss";
 import "@fontsource/righteous/index.css";
 import "@fontsource/ubuntu-mono/index.css";
-import { tsParticles, type ISourceOptions } from "@tsparticles/engine";
+import { type ISourceOptions, tsParticles } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
 
 const particlesConfig: ISourceOptions = {

@@ -1,8 +1,8 @@
-import { defineConfig } from "vite";
 import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { defineConfig } from "vite";
 import { generatePersonSchema } from "./src/schema/person";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -31,10 +31,7 @@ export default defineConfig({
         },
         transformIndexHtml(html) {
           if (!avatarPath)
-            avatarPath = (BASE_PATH + "assets/avatar.webp").replace(
-              /\/+/g,
-              "/",
-            );
+            avatarPath = `${BASE_PATH}assets/avatar.webp`.replace(/\/+/g, "/");
           const schemaObj = generatePersonSchema(avatarPath, SITE_URL);
           const schemaJson = JSON.stringify(schemaObj);
           const scriptTag = `<script type="application/ld+json">${schemaJson}</script>`;
