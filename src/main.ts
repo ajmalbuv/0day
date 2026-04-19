@@ -1,8 +1,8 @@
-import "./style.scss";
-import "@fontsource/righteous/index.css";
-import "@fontsource/ubuntu-mono/index.css";
-import { type ISourceOptions, tsParticles } from "@tsparticles/engine";
-import { loadSlim } from "@tsparticles/slim";
+import './style.scss';
+import '@fontsource/righteous/index.css';
+import '@fontsource/ubuntu-mono/index.css';
+import { type ISourceOptions, tsParticles } from '@tsparticles/engine';
+import { loadSlim } from '@tsparticles/slim';
 
 const particlesConfig: ISourceOptions = {
   fpsLimit: 60,
@@ -16,10 +16,10 @@ const particlesConfig: ISourceOptions = {
       },
     },
     color: {
-      value: "#000000",
+      value: '#000000',
     },
     shape: {
-      type: "circle",
+      type: 'circle',
     },
     opacity: {
       value: { min: 0.1, max: 0.5 },
@@ -30,29 +30,29 @@ const particlesConfig: ISourceOptions = {
     links: {
       enable: true,
       distance: 150,
-      color: "#000000",
+      color: '#000000',
       opacity: 0.4,
       width: 3,
     },
     move: {
       enable: true,
       speed: 1.0,
-      direction: "none",
+      direction: 'none',
       random: false,
       straight: false,
-      outModes: "out",
+      outModes: 'out',
     },
   },
   interactivity: {
-    detectsOn: "canvas",
+    detectsOn: 'canvas',
     events: {
       onHover: {
         enable: true,
-        mode: "grab",
+        mode: 'grab',
       },
       onClick: {
         enable: false,
-        mode: "push",
+        mode: 'push',
       },
     },
     modes: {
@@ -85,5 +85,5 @@ const particlesConfig: ISourceOptions = {
 };
 
 loadSlim(tsParticles).then(() => {
-  tsParticles.load({ id: "particles-js", options: particlesConfig });
+  tsParticles.load({ id: 'particles-js', options: particlesConfig });
 });

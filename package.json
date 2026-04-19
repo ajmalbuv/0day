@@ -6,17 +6,18 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format": "biome format --write",
+    "lint": "biome lint",
+    "check": "biome check --write"
   },
   "devDependencies": {
-    "@types/node": "^25.3.5",
+    "@biomejs/biome": "^2.4.12",
+    "@types/node": "^25.6.0",
     "bootstrap": "^5.3.8",
-    "sass-embedded": "^1.97.3",
-    "typescript": "^5.9.3",
-    "vite": "^8.0.0-beta.13"
-  },
-  "overrides": {
-    "vite": "^8.0.0-beta.13"
+    "sass-embedded": "^1.99.0",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.8"
   },
   "dependencies": {
     "@fontsource/righteous": "^5.2.7",
