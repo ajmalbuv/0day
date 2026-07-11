@@ -1,9 +1,12 @@
 {
   "index.html": {
-    "file": "assets/index-Ae_3rnFR.js",
+    "file": "assets/index-DPDyzJBc.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
+    "dynamicImports": [
+      "index.html"
+    ],
     "assets": [
       "assets/righteous-latin-ext-400-normal-rbdiPHGJ.woff2",
       "assets/righteous-latin-ext-400-normal-EtPo6WgU.woff",
